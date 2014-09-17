@@ -11,5 +11,7 @@ trace Model important event  like "This user has done this action at this date"
 
 Usage
 -----
-$> git clone https://github.com/temsa/Pillars.git
-$> meteor
+```
+ $> git clone https://github.com/temsa/Pillars.git
+ $> meteor
+```
