@@ -31,7 +31,6 @@ ModelSchema = Schema.Model = new SimpleSchema({
     type: String,
     regEx: SimpleSchema.RegEx.Id,
     denyUpdate: true,
-    optional: true,
     autoValue: function createCreator() {
       // console.log("this",this)
       // console.log("this field id",this.field("_id"))
@@ -49,15 +48,14 @@ ModelSchema = Schema.Model = new SimpleSchema({
   updatedAt: {
     type: Date,
     index: -1,
-    optional: true,
     autoValue: function createUpdateAt() {
       return new Date()
-    }
+    },
+    optional: true
   },
   updater: {
     type: String,
     regEx: SimpleSchema.RegEx.Id,
-    optional: true,
     autoValue: function createUpdater() {
       if (this.isUpdate && this.userId)
         return Meteor.user()
