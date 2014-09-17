@@ -1,0 +1,33 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+insecure
+accounts-ui
+accounts-oauth
+mrt:stacktrace
+meteorhacks:zones
+prasad19sara:client-debugger
+yogiben:admin
+aldeed:collection2
+aldeed:autoform
+alanning:roles
+mdj:chai
+natestrauser:connection-banner
+percolatestudio:fastclick
+mizzao:user-status
+seriousm:emoji-continued
+tmeasday:gravatar
+mrt:iron-router-progress
+less
+mrt:accounts-persona
+meteorhacks:fast-render
+appcache
+mizzao:bootstrap-3
+manuelschoebel:ms-seo
+dirkstevens:meteor-sitemaps
+spiderable
+zimme:iron-router-active
+francisbyrne:mighty-errors

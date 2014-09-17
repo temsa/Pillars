@@ -1,0 +1,51 @@
+<head>
+  <script>
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'persona-lib';
+      t.src = '//login.persona.org/include.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+</head>
+
+<body>
+
+</body>
+
+<template name="home">
+  {{#main}}
+    {{>cards}}
+  {{/main}}
+
+</template>
+
+<template name="main">
+  {{>mightyErrors}}
+  {{>connectionBanner}}
+  {{>nav}}
+  {{#if UI.contentBlock}}
+    {{>UI.contentBlock}}
+    {{>footer}}
+  {{/if}}
+</template>
+
+<template name="footer">
+  <br>
+
+  <div class="clearfix"></div>
+
+  <hr>
+  <div class="col-md-12 text-center page-footer"><p><a href="http://www.bootply.com/download/90113" target="_ext">Download Google Plus Style Template</a><br><a href="http://bootply.com/templates" target="_ext">More Bootstrap Templates by @Bootply</a></p>
+  {{>credits}}
+  </div>
+  <hr>
+
+</template>
+
+<template name="credits">
+  <div>Icons made by Freepik from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+</template>

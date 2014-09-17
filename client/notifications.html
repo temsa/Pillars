@@ -1,0 +1,22 @@
+<template name="notifications">
+  {{#if currentUser}}
+  <li class="dropdown">
+    {{#if userUnreadNotifications.count}}
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-bell" title="Notifications"></i> <span class="badge">{{userUnreadNotifications.count}}</span> <span class="caret"></span></a>
+    {{else}}
+      <a href="#" ><i class="glyphicon glyphicon-bell" title="Notifications"></i> <span class="badge">0</span> </a>
+    {{/if}}
+
+    <ul class="dropdown-menu" role="menu">
+
+      {{#each userUnreadNotifications}}
+      <li><a class="item" id="notifications-dropdown-{{_id}}" href="notification/{{_id}}"><i class="glyphicon glyphicon-comment"></i> {{title}}</a></li>
+      <li class="divider"></li>
+      {{/each}}
+      <li><a class="item" data-read-all-notifications ><i class="glyphicon glyphicon-check"></i> Mark all as read</a></li>
+
+    </ul>
+  </li>
+  {{/if}}
+
+</template>
