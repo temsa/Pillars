@@ -10,7 +10,6 @@ accounts-oauth
 mrt:stacktrace
 meteorhacks:zones
 prasad19sara:client-debugger
-yogiben:admin
 aldeed:collection2
 aldeed:autoform
 alanning:roles
@@ -31,3 +30,6 @@ dirkstevens:meteor-sitemaps
 spiderable
 zimme:iron-router-active
 francisbyrne:mighty-errors
+yogiben:admin@0.9.4
+chrismbeckett:fontawesome4
+
