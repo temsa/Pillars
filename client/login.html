@@ -15,3 +15,11 @@
   {{/if}}
 
 </template>
+
+<template name="pleaseLogin">
+  {{#unless currentUser}}
+  <p>Please <a href="#" data-app-login >Login</a> to continue !</p>
+  {{else}}
+  <p>Please go <a href="/">Home</a> , there is a problem !</p>
+  {{/unless}}
+</template>

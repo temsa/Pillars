@@ -1,6 +1,6 @@
 global = window;
 
-Template.login.events({
+Template.loginPlease.events = Template.login.events({
   'click [data-app-login]': function() {
     Meteor.loginWithPersona();
     // increment the counter when button is clicked
