@@ -32,13 +32,8 @@ ModelSchema = Schema.Model = new SimpleSchema({
     regEx: SimpleSchema.RegEx.Id,
     denyUpdate: true,
     autoValue: function createCreator() {
-      // console.log("this",this)
-      // console.log("this field id",this.field("_id"))
-      // console.log("this siblingField id",this.siblingField("_id"))
-      // console.log("this userId",this.userId)
-
       if (this.isInsert && this.userId)
-        return Meteor.user()
+        return Meteor.user()._id
     },
     autoform: {
       options: SchemaUtils.describeUser
@@ -58,7 +53,7 @@ ModelSchema = Schema.Model = new SimpleSchema({
     regEx: SimpleSchema.RegEx.Id,
     autoValue: function createUpdater() {
       if (this.isUpdate && this.userId)
-        return Meteor.user()
+        return Meteor.user()._id
     },
     autoform: {
       options: SchemaUtils.describeUser

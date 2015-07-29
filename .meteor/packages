@@ -16,20 +16,22 @@ alanning:roles
 mdj:chai
 natestrauser:connection-banner
 percolatestudio:fastclick
-mizzao:user-status
 seriousm:emoji-continued
 tmeasday:gravatar
-mrt:iron-router-progress
 less
 mrt:accounts-persona
-meteorhacks:fast-render
 appcache
 mizzao:bootstrap-3
 manuelschoebel:ms-seo
 dirkstevens:meteor-sitemaps
 spiderable
-zimme:iron-router-active
 francisbyrne:mighty-errors
-yogiben:admin@0.9.4
 chrismbeckett:fontawesome4
 
+iron:router
+dburles:collection-helpers
+twbs:bootstrap
+fortawesome:fontawesome
+yogiben:admin
+spacebars
+zimme:active-route

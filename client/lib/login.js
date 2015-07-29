@@ -1,13 +1,13 @@
 global = window;
 
-Template.loginPlease.events = Template.login.events({
+Template.pleaseLogin.events = Template.login.events({
   'click [data-app-login]': function() {
-    Meteor.loginWithPersona();
+    Meteor.loginWithPersona(console.log);
     // increment the counter when button is clicked
     //Session.set("counter", Session.get("counter") + 1);
   },
   'click [data-app-logout]': function() {
     //Session.
-    Meteor.logout();
+    Meteor.logout(console.warn);
   }
 });

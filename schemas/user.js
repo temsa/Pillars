@@ -59,7 +59,7 @@ UserSchema = Schema.User = new SimpleSchema([ ModelSchema, {
     username: {
         type: String,
         regEx: SimpleSchema.RegEx.Email,
-        unique: true
+        // unique: true
     },
     emails: {
         type: [Object],

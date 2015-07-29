@@ -8,10 +8,10 @@ NotificationSchema = Schema.Notification = new SimpleSchema([ModelSchema, {
     optional: true
   },
   author: {
-    //   autoValue: function createCreator() {
-    //     //if (this.isInsert)
-    //       return Meteor.userId()
-    //   },
+    autoValue: function () {
+      //if (this.isInsert)
+        return Meteor.userId()
+    },
     type: String,
     regEx: SimpleSchema.RegEx.Id,
     label: "Auteur",
@@ -21,10 +21,10 @@ NotificationSchema = Schema.Notification = new SimpleSchema([ModelSchema, {
     optional: true
   },
   owner: {
-    //   autoValue: function createCreator() {
-    //     //if (this.isInsert)
-    //       return Meteor.userId()
-    //   },
+    autoValue: function () {
+      //if (this.isInsert)
+        return Meteor.userId()
+    },
     type: String,
     regEx: SimpleSchema.RegEx.Id,
     label: "Cible",

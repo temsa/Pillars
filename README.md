@@ -15,3 +15,7 @@ Usage
  $> git clone https://github.com/temsa/Pillars.git
  $> meteor
 ```
+
+##Notes
+In order for auth to work as intended, either use in your browser the URL displayed in console,  http://localhost:3000/ in local, or run meteor with the ROOT_URL environment variable so that, or run meteor with the ROOT_URL environment variable so that
+[Meteor.absoluteUrl('')](http://docs.meteor.com/#/full/meteor_absoluteurl) returns the valid URL for you app.
